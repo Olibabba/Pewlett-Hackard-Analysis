@@ -1,9 +1,10 @@
-select sum(count)
-from dept_retire;
+select count(*)
+from mentorship_eligibilty;
+-- where title = 'Manager';
 
-select dr.count, d.dept_name, e.first_name, e.last_name, t.title
 
--- Dept manager
+
+-- find number of retirees by department plus dept manager
 select dr.count, d.dept_name, e.first_name, e.last_name, t.title
 -- into dept_manager_retire_count
 from dept_retire dr
@@ -76,6 +77,7 @@ SELECT
 FROM retirement_titles
 where 
 	to_date = '9999-01-01'
+	and title = Manager
 order by emp_no,
 		to_date desc;
 		
@@ -98,7 +100,7 @@ SELECT
 		d.from_date,
 		t.to_date,
         t.title
-INTO mentorship_eligibilty
+-- INTO mentorship_eligibilty
 FROM employees e 
 	inner join dept_emp d
 		ON (e.emp_no = d.emp_no)
@@ -109,3 +111,29 @@ where
 	and e.birth_date >= '1/1/1965'
 	and e.birth_date <= '12/31/1965'
 order by emp_no;
+
+select count(*)
+from dept_emp
+where dept_no = 'd008'
+	and to_date = '9999-01-01';
+	
+-- Add up salaries by title
+select
+	 ut.title, s.salary
+From unique_titles ut
+	inner join employees e
+		on (ut.emp_no = e.emp_no)
+	inner join salaries s
+		on (e.emp_no = s.emp_no)
+where s.to_date = '9999-01-01'
+group by ut.title, s.salary;
+-- order by total_salary desc;
+
+select
+	count (*) as num,
+	title
+-- into retiring_titles
+from 
+	unique_titles
+group by title
+order by num desc;
