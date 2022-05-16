@@ -21,7 +21,7 @@ There are four major points that stand out from this analysis
 |2 | "Manager" |
 
 
-![Retiree Promotions]()
+![Retiree Promotions](https://github.com/Olibabba/Pewlett-Hackard-Analysis/blob/main/data/retiree_promotions.png)
 
 - 2 managers are retiring
 Hauke Zhang manager of sales overseeing 37701 employees
@@ -56,7 +56,7 @@ where
 group by dr.count, d.dept_name, e.first_name, e.last_name, t.title;
 ```
 
-![Department Managers Retiree Count]()
+![Department Managers Retiree Count](https://github.com/Olibabba/Pewlett-Hackard-Analysis/blob/main/data/Dept%20Managers.png)
 
 
 ```
