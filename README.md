@@ -8,6 +8,8 @@ After finding the number of upcoming retirements, Pewlett-Hackard has asked us t
 
 There are four major points that stand out from this analysis
 
+- There are 72,458 total retirement-ready employees
+
 - nearly 50,000 senior employees are retiring
 
 | Num    | Title | 
@@ -26,13 +28,11 @@ Hilary Kambil manger of research oversees 15441 employees
 
 - 1,549 retirement-ready employees are eligible for mentorship 
 
-- 
-
 ## Summary
 
 
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-- There will be 72,458 total positions to fill
+- There will be 72,458 total positions to fill in total
 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees? 
 - There are not nearly enough elibible mentors. If every 1,549 eligible mentors decide to do so, each one would need to mentor about 45 new employees.
@@ -59,7 +59,7 @@ where
 group by dr.count, d.dept_name, e.first_name, e.last_name, t.title;
 ```
 
-![Department Managers Retiree Count](https://github.com/Olibabba/Pewlett-Hackard-Analysis/blob/main/data/Dept%20Managers.png)
+![Department Managers Retiree Count](https://github.com/Olibabba/Pewlett-Hackard-Analysis/blob/main/data/Dept_Managers.png)
 
 
 If Pewlett-Hackard is interested in recognizing the retirees, they should know how many emplyees have been promoted while at the company!
