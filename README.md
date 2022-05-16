@@ -23,6 +23,7 @@ There are four major points that stand out from this analysis
 |2 | "Manager" |
 
 - 2 managers are retiring
+
 Hauke Zhang manager of sales oversees 37701 employees
 Hilary Kambil manger of research oversees 15441 employees
 
